@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Historial de Movimientos - Sistema de Inventario</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+    <img th:src="@{/images/logo.png}" alt="Logo Castores" class="logo">
+    <nav>
+        <ul>
+            <li><a href="/inventario">Inventario</a></li>
+            <li><a href="/salida">Salida</a></li>
+            <li><a href="/historico">Histórico</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Historial de Movimientos</h1>
+    <form th:action="@{/historico}" method="get">
+        <label>Filtrar por tipo:
+            <select name="tipo">
+                <option value="">Todos</option>
+                <option value="Entrada">Entrada</option>
+                <option value="Salida">Salida</option>
+            </select>
+        </label>
+        <button type="submit">Filtrar</button>
+    </form>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Usuario</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+            <th>Fecha</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="movimiento : ${movimientos}">
+            <td th:text="${movimiento.id_movimiento}"></td>
+            <td th:text="${movimiento.producto.nombre_producto}"></td>
+            <td th:text="${movimiento.usuario.nombre_usuario}"></td>
+            <td th:text="${movimiento.tipo_movimiento}"></td>
+            <td th:text="${movimiento.cantidad}"></td>
+            <td th:text="${#temporals.format(movimiento.fecha_hora, 'yyyy-MM-dd HH:mm:ss')}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <p>&copy; 2025 Castores León GTO. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

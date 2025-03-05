@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Histórico de Movimientos - Sistema de Inventario</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+    <img th:src="@{/images/logo.png}" alt="Logo Castores" class="logo">
+    <nav>
+        <ul>
+            <li><a href="/inventario">Inventario</a></li>
+            <li><a href="/salida">Salida</a></li>
+            <li><a href="/historico">Histórico</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Módulo de Histórico</h1>
+    <form th:action="@{/historico}" method="get">
+        <label>Filtrar por tipo:
+            <select name="tipo">
+                <option value="">Todos</option>
+                <option value="Entrada" th:selected="${filtro == 'Entrada'}">Entrada</option>
+                <option value="Salida" th:selected="${filtro == 'Salida'}">Salida</option>
+            </select>
+        </label>
+        <button type="submit">Filtrar</button>
+    </form>
+    <h2>Movimientos</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Producto</th>
+            <th>Usuario</th>
+            <th>Tipo</th>
+            <th>Cantidad</th>
+            <th>Fecha y Hora</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="movimiento : ${movimientos}">
+            <td data-label="ID" th:text="${movimiento.id_movimiento}"></td>
+            <td data-label="Producto" th:text="${movimiento.producto.nombre_producto}"></td>
+            <td data-label="Usuario" th:text="${movimiento.usuario.nombre_usuario}"></td>
+            <td data-label="Tipo" th:text="${movimiento.tipo_movimiento}"></td>
+            <td data-label="Cantidad" th:text="${movimiento.cantidad}"></td>
+            <td data-label="Fecha y Hora" th:text="${movimiento.fecha_hora}"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <p>© 2025 Castores León GTO. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
