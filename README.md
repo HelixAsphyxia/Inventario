@@ -9,7 +9,6 @@ Bienvenido al repositorio del proyecto **Inventario**, un sistema robusto y eleg
 | Carpeta/Archivo         | Descripción                                      |
 |--------------------------|--------------------------------------------------|
 | `SCRIPTS/`              | Contiene scripts (ej. SQL) para la configuración de la base de datos. |
-| `logo/`                 | Almacena el logo y la imagen guía para ejecutar la aplicación. |
 | `README.md`             | Este archivo, tu guía definitiva para el proyecto. |
 | `src/main/resources/application.properties` | Configuración de la base de datos y la aplicación. |
 | `pom.xml`               | Archivo de configuración de Maven. |
