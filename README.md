@@ -39,12 +39,46 @@ Este proyecto fue creado como parte de una evaluación técnica, implementando u
      \proyecto-inventario\src\main\java\com\empresa\proyectoinventario\proyectoinventario\scripts\
 - Nombre del script: inventario_db.sql
 - Nombre del script para otro punto de la evaluacion: ConsultasDB.sql
+
 ### Herramientas de Desarrollo
-- **Maven**.
-- **Spring Boot**.
-- **Spring Framework**.
-- **Spring Security**.
-- **JDBC Driver para SQL Server**: Versión 12.8.1.jre11 (definida en `pom.xml`).
+- **Maven**: Gestiona las dependencias y el ciclo de vida del proyecto.
+- **Spring Boot**: Versión 3.4.3, framework principal para la arquitectura MVC.
+- **Spring Framework**: Proporciona la base para los beans y la inyección de dependencias.
+- **Spring Security**: Versión 6.4.3, para la gestión de autenticación y autorización.
+- **Thymeleaf**: Motor de plantillas para las vistas dinámicas.
+- **JDBC Driver para SQL Server**: Versión 12.8.1.jre11, definido en `pom.xml` para la conexión a la base de datos.
+
+---
+
+## 📦 Dependencias del Proyecto
+A continuación, se listan las dependencias principales definidas en el archivo `pom.xml`, gestionadas por Maven. Estas bibliotecas habilitan las funcionalidades clave de la aplicación.
+
+| **Grupo/Artefacto**                        | **Versión**    | **Descripción**                              |
+|--------------------------------------------|----------------|----------------------------------------------|
+| `org.springframework.boot:spring-boot-starter-parent` | 3.4.3          | Define la versión base y gestiona dependencias comunes de Spring Boot. |
+| `org.springframework.boot:spring-boot-starter-web`    | 3.4.3          | Soporte para aplicaciones web con Spring MVC y Tomcat embebido. |
+| `org.springframework.boot:spring-boot-starter-thymeleaf` | 3.4.3       | Integra Thymeleaf como motor de plantillas para vistas. |
+| `org.springframework.boot:spring-boot-starter-data-jpa` | 3.4.3      | Proporciona soporte para JPA y Hibernate. |
+| `org.springframework.boot:spring-boot-starter-jdbc`    | 3.4.3          | Soporte para conexiones JDBC con HikariCP. |
+| `com.microsoft.sqlserver:mssql-jdbc`        | 12.8.1.jre11   | Controlador JDBC para conectar a Microsoft SQL Server. |
+| `org.springframework.boot:spring-boot-starter-security` | 3.4.3      | Gestión de autenticación y autorización con Spring Security. |
+| `org.springframework.boot:spring-boot-starter-logging` | 3.4.3      | Configura logging con Logback por defecto. |
+
+#### **Dependencias Transitorias (Incluidas Automáticamente)**
+Estas dependencias se derivan de los "starters" principales y son gestionadas por Maven:
+- `org.hibernate:hibernate-core:6.6.8.Final` - Motor de persistencia para JPA.
+- `org.springframework:spring-data-jpa:3.4.3` - Extensión de Spring Data para JPA.
+- `org.springframework:spring-orm:6.2.3` - Soporte ORM de Spring.
+- `org.springframework:spring-jdbc:6.2.3` - Soporte JDBC de Spring.
+- `com.zaxxer:HikariCP:5.1.0` - Pool de conexiones de base de datos.
+- `com.fasterxml.jackson.core:jackson-databind:2.18.2` - Serialización/deserialización JSON.
+- `org.apache.tomcat.embed:tomcat-embed-core:10.1.36` - Servidor web embebido.
+- `ch.qos.logback:logback-classic:1.5.16` - Implementación de logging.
+- `org.slf4j:slf4j-api:2.0.16` - API de logging.
+
+Para ver el árbol completo de dependencias, ejecuta:
+```bash
+mvn dependency:tree
 
 ## ✨ Características Destacadas
   - Arquitectura MVC: Implementada con Spring Boot 3.4.3 para una estructura modular y mantenible.
