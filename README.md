@@ -47,13 +47,13 @@ Este proyecto fue creado como parte de una evaluación técnica, implementando u
 - **JDBC Driver para SQL Server**: Versión 12.8.1.jre11 (definida en `pom.xml`).
 
 ### ✨ Características Destacadas
-Arquitectura MVC: Implementada con Spring Boot 3.4.3 para una estructura modular y mantenible.
-Gestión de Inventario: Permite agregar productos, aumentar existencias, dar de baja/reactivar, y visualizar inventarios activos/inactivos.
-Módulo de Salida: Permite restar inventario con validaciones de cantidad.
-Historial de Movimientos: Registra entradas y salidas con filtros por tipo, usuario y fecha.
-Seguridad por Roles: Diferencia permisos entre Administrador y Almacenista.
-Interfaz Dinámica: Utiliza Thymeleaf para vistas responsivas.
-Validaciones: Incluye mensajes de error para inventario insuficiente o accesos no autorizados.
+  Arquitectura MVC: Implementada con Spring Boot 3.4.3 para una estructura modular y mantenible.
+  Gestión de Inventario: Permite agregar productos, aumentar existencias, dar de baja/reactivar, y visualizar inventarios activos/inactivos.
+  Módulo de Salida: Permite restar inventario con validaciones de cantidad.
+  Historial de Movimientos: Registra entradas y salidas con filtros por tipo, usuario y fecha.
+  Seguridad por Roles: Diferencia permisos entre Administrador y Almacenista.
+  Interfaz Dinámica: Utiliza Thymeleaf para vistas responsivas.
+  Validaciones: Incluye mensajes de error para inventario insuficiente o accesos no autorizados.
 ---
 
 ## 🚀 Cómo Correr la Aplicación
