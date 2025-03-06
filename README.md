@@ -79,7 +79,7 @@ Estas dependencias se derivan de los "starters" principales y son gestionadas po
 Para ver el árbol completo de dependencias, ejecuta:
 ```bash
 mvn dependency:tree
-
+```
 ## ✨ Características Destacadas
   - Arquitectura MVC: Implementada con Spring Boot 3.4.3 para una estructura modular y mantenible.
   - Gestión de Inventario: Permite agregar productos, aumentar existencias, dar de baja/reactivar, y visualizar inventarios activos/inactivos.
