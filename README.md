@@ -53,7 +53,7 @@ Bienvenido al repositorio del proyecto **Inventario**, un sistema robusto y eleg
      ```bash
      proyecto-inventario\src\main\java\com\empresa\proyectoinventario\proyectoinventario
    - Corre este archivo llamado: ProyectoInventarioApplication.java
-![Desde IntelliJ IDEA](RunApp.png)
+![Desde IntelliJ IDEA](Run.png)
 ### ✨ Características Destacadas
 Arquitectura modular con Spring Boot 3.4.3.
 Integración segura con SQL Server y logging detallado.
