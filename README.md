@@ -46,7 +46,7 @@ Este proyecto fue creado como parte de una evaluación técnica, implementando u
 - **Spring Security**.
 - **JDBC Driver para SQL Server**: Versión 12.8.1.jre11 (definida en `pom.xml`).
 
-### ✨ Características Destacadas
+## ✨ Características Destacadas
   Arquitectura MVC: Implementada con Spring Boot 3.4.3 para una estructura modular y mantenible.
   Gestión de Inventario: Permite agregar productos, aumentar existencias, dar de baja/reactivar, y visualizar inventarios activos/inactivos.
   Módulo de Salida: Permite restar inventario con validaciones de cantidad.
