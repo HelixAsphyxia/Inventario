@@ -19,7 +19,7 @@ Bienvenido al repositorio del proyecto **Inventario**, un sistema robusto y eleg
 ## 🛠️ Detalles Técnicos
 
 ### IDE Utilizado
-- **IntelliJ IDEA**.
+- **IntelliJ IDEA**: ultima version.
 
 ### Lenguaje de Programación
 - **Java**: version "22.0.1" 2024-04-16
