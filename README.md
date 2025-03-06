@@ -69,5 +69,8 @@ Arquitectura modular con Spring Boot 3.4.3.
 Integración segura con SQL Server y logging detallado.
 Interfaz dinámica con Thymeleaf y seguridad con Spring Security 6.4.3.
 ### 📝 Notas Importantes
+
+El diagrama esta anexado a la raiz del proyecto.
+
 Agradezco la oportunidad y el tiempo :D
    
