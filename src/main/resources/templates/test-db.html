@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Prueba de Conexión BD</title>
+</head>
+<body>
+<h1>Prueba de Conexión a la Base de Datos</h1>
+<p th:text="${message}"></p>
+<h2>Usuarios en la base de datos:</h2>
+<div th:if="${usuarios != null and usuarios.size() > 0}">
+    <ul>
+        <li th:each="usuario : ${usuarios}"
+            th:text="${usuario.nombre_usuario} + ' (Rol: ' + ${usuario.rol?.nombre_rol} + ')'"></li>
+    </ul>
+</div>
+<div th:if="${usuarios == null or usuarios.size() == 0}">
+    <p>No se encontraron usuarios en la base de datos.</p>
+</div>
+</body>
+</html>

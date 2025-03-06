@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Salida de Productos - Sistema de Inventario</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+    <img th:src="@{/images/logo.png}" alt="Logo Castores" class="logo">
+    <nav>
+        <ul>
+            <li><a href="/inventario">Inventario</a></li>
+            <li><a href="/salida">Salida</a></li>
+            <li><a href="/historico">Histórico</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Módulo de Salida</h1>
+    <div th:if="${error}" class="error" th:text="${error}"></div>
+    <h2>Productos Activos</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Cantidad</th>
+            <th>Acción</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="producto : ${productos}">
+            <td data-label="ID" th:text="${producto.id_producto}"></td>
+            <td data-label="Nombre" th:text="${producto.nombre_producto}"></td>
+            <td data-label="Cantidad" th:text="${producto.cantidad}"></td>
+            <td data-label="Acción" class="actions">
+                <form th:action="@{/salida/sacar}" method="post" class="inline-form">
+                    <input type="hidden" name="idProducto" th:value="${producto.id_producto}"/>
+                    <input type="number" name="cantidad" min="1" required class="small-input"/>
+                    <button type="submit">Sacar</button>
+                </form>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<footer>
+    <p>© 2025 Castores León GTO. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

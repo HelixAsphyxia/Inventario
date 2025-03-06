@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Inicio - Sistema de Inventario</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<header>
+    <img th:src="@{/images/logo.png}" alt="Logo Castores" class="logo">
+    <nav>
+        <ul>
+            <li><a href="/inventario">Inventario</a></li>
+            <li><a href="/salida">Salida</a></li>
+            <li><a href="/historico">Histórico</a></li>
+            <li><a href="/logout">Cerrar Sesión</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1 th:text="${message}"></h1>
+    <p>Esta es la página de inicio del Sistema de Inventario de Castores León GTO. Puedes navegar a <a th:href="@{/test}">/test</a> para probar.</p>
+</div>
+<footer>
+    <p>© 2025 Castores León GTO. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>

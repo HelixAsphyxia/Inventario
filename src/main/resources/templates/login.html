@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login - Sistema de Inventario</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div class="login-container">
+    <img th:src="@{/images/logo.png}" alt="Logo Castores" class="logo">
+    <h1>Bienvenido</h1>
+    <h2>Almacén Castores León GTO</h2>
+    <form th:action="@{/login}" method="post">
+        <div th:if="${param.error}" class="error">Usuario o contraseña incorrectos</div>
+        <div th:if="${param.logout}" class="success">Has cerrado sesión exitosamente</div>
+        <label>Usuario:
+            <input type="text" name="username" required placeholder="Ingresa tu usuario"/>
+        </label>
+        <label>Contraseña:
+            <input type="password" name="password" required placeholder="Ingresa tu contraseña"/>
+        </label>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+</div>
+<footer>
+    <p>© 2025 Castores León GTO. Todos los derechos reservados.</p>
+</footer>
+</body>
+</html>
