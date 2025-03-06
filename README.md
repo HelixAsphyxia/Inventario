@@ -111,10 +111,7 @@ https://drive.google.com/file/d/1FCePusXPKr-9BtqLrCmvs25nWrCYS1kg/view?usp=drive
 
 - Corre este archivo llamado: ProyectoInventarioApplication.java
 ![Desde IntelliJ IDEA](Run.png)
-### ✨ Características Destacadas
-Arquitectura modular con Spring Boot 3.4.3.
-Integración segura con SQL Server y logging detallado.
-Interfaz dinámica con Thymeleaf y seguridad con Spring Security 6.4.3.
+
 ### 📝 Notas Importantes
 
 El diagrama relacional de la base de datos está anexado en la raíz del proyecto como diagrama_relacional.png. Por favor, revisa este archivo para entender la estructura de la base de datos.
