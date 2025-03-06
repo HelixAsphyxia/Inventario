@@ -19,19 +19,21 @@ Bienvenido al repositorio del proyecto **Inventario**, un sistema robusto y eleg
 ## 🛠️ Detalles Técnicos
 
 ### IDE Utilizado
-- **IntelliJ IDEA**: Versión [Inserta versión, ej. 2023.2.1] (verifica en `Help > About`).
+- **IntelliJ IDEA**.
 
 ### Lenguaje de Programación
-- **Java**: Versión 17 (verificado con `java -version`).
+- **Java**: version "22.0.1" 2024-04-16
+Java(TM) SE Runtime Environment (build 22.0.1+8-16)
+Java HotSpot(TM) 64-Bit Server VM (build 22.0.1+8-16, mixed mode, sharing).
 
 ### Sistema de Gestión de Base de Datos
-- **SQL Server Management Studio 2022**: Versión [Inserta versión, ej. 19.0.2.0] (verifica en `Help > About` o con `SELECT @@VERSION`).
+- **SQL Server Management Studio 2022**: Versión Microsoft SQL Server 2022 (RTM) - 16.0.1000.6 (X64)
 - **Configuración de Conexión**:
-  - URL: `jdbc:sqlserver://DESKTOP-ID69N8S\\MSSQLSERVER:1433;databaseName=inventario_db;encrypt=false;trustServerCertificate=true`
-  - Usuario: `sa`
-  - Contraseña: `37510`
-  - Driver: `com.microsoft.sqlserver.jdbc.SQLServerDriver`
-
+  - Correr el script que se encuentra en: 
+    ```bash
+     \proyecto-inventario\src\main\java\com\empresa\proyectoinventario\proyectoinventario\scripts\
+- Nombre del script: inventario_db.sql
+- Nombre del script para otro punto de la evaluacion: ConsultasDB.sql
 ### Herramientas de Desarrollo
 - **Maven**.
 - **Spring Boot**.
