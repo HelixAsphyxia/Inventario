@@ -61,8 +61,5 @@ Arquitectura modular con Spring Boot 3.4.3.
 Integración segura con SQL Server y logging detallado.
 Interfaz dinámica con Thymeleaf y seguridad con Spring Security 6.4.3.
 ### 📝 Notas Importantes
-Fecha de Creación: 05/03/2025.
-Autenticación en Git: Usa un Personal Access Token (PAT) generado en GitHub > Settings > Developer settings.
-Soporte: Contacta al desarrollador en el perfil HelixAsphyxia.
-Seguridad: Mantén la contraseña 37510 segura y considera usar variables de entorno en producción.
+Agradezco la oportunidad y el tiempo :D
    
