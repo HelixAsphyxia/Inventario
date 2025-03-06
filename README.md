@@ -11,7 +11,7 @@ Este proyecto fue creado como parte de una evaluación técnica, implementando u
 | **Carpeta/Archivo**         | **Descripción**                                      |
 |-----------------------------|------------------------------------------------------|
 | `SCRIPTS/`                  | Contiene scripts SQL para la creación y configuración de la base de datos. |
-| `README.md`                 | Este archivo, que sirve como la guía principal del proyecto. |
+| `README.md`                 | Guía principal del proyecto.                                           |
 | `src/main/resources/application.properties` | Archivo de configuración de la base de datos y la aplicación. |
 | `src/main/resources/templates/` | Contiene las vistas HTML gestionadas por Thymeleaf. |
 | `src/main/java/`            | Contiene el código fuente (modelos, controladores, servicios, repositorios). |
