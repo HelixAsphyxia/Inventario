@@ -1,7 +1,7 @@
-# Inventario - Sistema de Gestión Profesional
+# Inventario - Sistema de Gestión de Inventarioss
 
 ## 🌟 Bienvenido
-Bienvenido al repositorio del proyecto **Inventario**, un sistema robusto y elegante desarrollado para gestionar inventarios personales con tecnología de punta. Este proyecto, creado el 5 de marzo de 2025, utiliza **Spring Boot 3.4.3**, **Maven**, **Java 17**, y **SQL Server** con **SQL Server Management Studio 2022**, ofreciendo una solución moderna y escalable.
+Bienvenido al repositorio del proyecto **Inventario**, un sistema para gestionar inventarios personales con tecnología actual. Este proyecto, creado el 5 de marzo de 2025, utiliza **Spring Boot**, **Maven**, **Java**, y **SQL Server** con **SQL Server Management Studio 2022**, ofreciendo una solución moderna y escalable.
 
 ---
 
