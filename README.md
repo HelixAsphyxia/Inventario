@@ -59,8 +59,10 @@ Java HotSpot(TM) 64-Bit Server VM (build 22.0.1+8-16, mixed mode, sharing).
 ## Visualiza mi video!
 
 Anexo drive para visualizar la explicacion de la prueba tecnica.
+
 https://drive.google.com/file/d/1FCePusXPKr-9BtqLrCmvs25nWrCYS1kg/view?usp=drive_link
 
+- Corre este archivo llamado: ProyectoInventarioApplication.java
 ![Desde IntelliJ IDEA](Run.png)
 ### ✨ Características Destacadas
 Arquitectura modular con Spring Boot 3.4.3.
